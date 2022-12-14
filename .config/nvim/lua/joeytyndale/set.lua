@@ -1,7 +1,6 @@
 vim.opt.guicursor = ""
 
 vim.opt.shell = "/bin/bash"
-
 vim.opt.nu = true
 vim.opt.relativenumber = true
 

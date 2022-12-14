@@ -171,6 +171,7 @@ alias gp="git pull"
 alias gc="git commit"
 alias gs="git status"
 alias :q="echo 'You are not in Vim dude'"
+alias config='/usr/bin/git --git-dir=/Users/joeytyndale/dotfiles --work-tree=/Users/joeytyndale'
 
 ##END ##
 
@@ -183,10 +184,9 @@ eval "$(thefuck --alias)"
 
 
 
-#eval "$(starship init bash)"
 
 
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
-alias config='/usr/bin/git --git-dir=/Users/joeytyndale/dotfiles --work-tree=/Users/joeytyndale'
+eval "$(starship init bash)"
