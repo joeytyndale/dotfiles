@@ -16,6 +16,9 @@ nnoremap("<leader>fg","<cmd>Ag<cr>")
 nnoremap("<leader>fb","<cmd>lua require('telescope.builtin').buffers()<cr>")
 nnoremap("<leader>fh","<cmd>lua require('telescope.builtin').help_tags()<cr>")
 
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
+
 nnoremap("gd","<cmd>LspDefinition<CR>")
 nnoremap("gs","<cmd>LspDocumentSymbolSearch<CR>")
 nnoremap("gS","<cmd>LspWorkspaceSymbolSearch<CR>")
