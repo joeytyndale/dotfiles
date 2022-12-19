@@ -9,7 +9,7 @@ nnoremap("<C-f>","<cmd>NERDTreeFind<CR>")
 
 --Fuzzy and files
 nnoremap("<C-p>","<cmd>FZF<CR>")
---nnoremap("<leader>t","<cmd>TagbarToggle<CR>")
+nnoremap("<leader>c","<cmd>TagbarToggle<CR>")
 --nnoremap("<leader>ff","<cmd>lua require('telescope.builtin').find_files()<cr>")
 nnoremap("<leader>ff","<cmd>FZF<cr>")
 nnoremap("<leader>fg","<cmd>Ag<cr>")

@@ -1,6 +1,6 @@
 vim.opt.guicursor = ""
 
-vim.opt.shell = "/bin/bash"
+vim.opt.shell = "/usr/local/bin/fish"
 vim.opt.nu = true
 vim.opt.relativenumber = true
 

@@ -125,6 +125,11 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/nvim-blame-line",
     url = "https://github.com/tveskag/nvim-blame-line"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = false,
     needs_bufread = false,

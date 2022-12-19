@@ -9,6 +9,7 @@ return require('packer').startup(function()
     use 'prabirshrestha/asyncomplete-lsp.vim'
     use 'mattn/vim-lsp-settings'
     use 'dmerejkowsky/vim-ale'
+    use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     
     --TOKYOOOO
     use 'folke/tokyonight.nvim'
