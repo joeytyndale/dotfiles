@@ -1,26 +1,21 @@
 local nnoremap = require("joeytyndale.keymap").nnoremap
-
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
-
---NerdTree
-nnoremap("<leader>n", "<cmd>NERDTreeFocus<CR>")
-nnoremap("<C-n>","<cmd>NERDTreeToggle<CR>")
-nnoremap("<C-f>","<cmd>NERDTreeFind<CR>")
 
 --Fuzzy and files
 nnoremap("<C-p>","<cmd>FZF<CR>")
-nnoremap("<leader>c","<cmd>TagbarToggle<CR>")
---nnoremap("<leader>ff","<cmd>lua require('telescope.builtin').find_files()<cr>")
 nnoremap("<leader>ff","<cmd>FZF<cr>")
+nnoremap("<leader>c","<cmd>TagbarToggle<CR>")
 nnoremap("<leader>fg","<cmd>Ag<cr>")
 nnoremap("<leader>fb","<cmd>lua require('telescope.builtin').buffers()<cr>")
 nnoremap("<leader>fh","<cmd>lua require('telescope.builtin').help_tags()<cr>")
 
+--Movement
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
 
+--LSP
 nnoremap("gd","<cmd>LspDefinition<CR>")
 nnoremap("gs","<cmd>LspDocumentSymbolSearch<CR>")
 nnoremap("gS","<cmd>LspWorkspaceSymbolSearch<CR>")
