@@ -115,20 +115,10 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/neotest-phpunit",
     url = "https://github.com/olimorris/neotest-phpunit"
   },
-  nerdtree = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/preservim/nerdtree"
-  },
   ["nvim-blame-line"] = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/nvim-blame-line",
     url = "https://github.com/tveskag/nvim-blame-line"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
@@ -146,11 +136,6 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ripgrep = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/ripgrep",
-    url = "https://github.com/BurntSushi/ripgrep"
-  },
   tagbar = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/tagbar",
@@ -161,20 +146,10 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["vim-ale"] = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-ale",
     url = "https://github.com/dmerejkowsky/vim-ale"
-  },
-  ["vim-buftabline"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-buftabline",
-    url = "https://github.com/ap/vim-buftabline"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -191,25 +166,10 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-lsp-settings",
     url = "https://github.com/mattn/vim-lsp-settings"
   },
-  ["vim-php-cs-fixer"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-php-cs-fixer",
-    url = "https://github.com/stephpy/vim-php-cs-fixer"
-  },
-  ["vim-smooth-scroll"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-smooth-scroll",
-    url = "https://github.com/terryma/vim-smooth-scroll"
-  },
   ["vim-test"] = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-test",
     url = "https://github.com/vim-test/vim-test"
-  },
-  ["vim-tmux-navigator"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
-    url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
 
