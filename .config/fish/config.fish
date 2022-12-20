@@ -17,7 +17,7 @@ alias aws-prod-worker="ssh -i ~/.ssh/id_rsa ubuntu@ec2-34-231-242-153.compute-1.
 alias aws-prod-helper="ssh -i ~/.ssh/id_rsa ubuntu@ec2-34-199-92-207.compute-1.amazonaws.com"
 alias ls="ls -lah"
 alias logreset="rm /Users/joeytyndale/Projects/shopify-app/storage/logs/laravel.log; touch /Users/joeytyndale/Projects/shineOn/shopify-app/storage/logs/laravel.log"
-alias vopen="nvim -O \`fzf\`"
+alias vopen="nvim -O (fzf)"
 alias vo="vopen"
 alias se="nvim -O \`git status | grep '^\s[a-z]:*\S*' | grep -oE '\S*\$' | fzf \`"
 alias branch="git checkout (git branch --all | grep -oE '\S*' | fzf)"
@@ -34,3 +34,5 @@ alias :q="echo 'You are not in Vim dude'"
 
 alias config='/usr/bin/git --git-dir=/Users/joeytyndale/dotfiles --work-tree=/Users/joeytyndale'
 starship init fish | source
+
+thefuck --alias | source
