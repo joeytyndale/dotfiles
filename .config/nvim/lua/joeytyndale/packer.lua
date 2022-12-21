@@ -23,6 +23,9 @@ return require('packer').startup(function(use)
   
     --Git
     use 'tpope/vim-fugitive'
+    
+    --Moving around
+    use 'christoomey/vim-tmux-navigator'
   
     --COLOR
     use {'nyoom-engineering/oxocarbon.nvim'}
