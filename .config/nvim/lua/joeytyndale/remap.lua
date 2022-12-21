@@ -12,6 +12,16 @@ nnoremap("<C-u>", "<C-u>zz")
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
 
+--Other
+nnoremap('<leader>c', '<cmd>TagbarToggle<CR>')
+
+--Git
+nnoremap("<leader>gdg","<cmd>diffget<CR>")
+nnoremap("<leader>gr","<cmd>diffget<CR>")
+nnoremap("<leader>gdp","<cmd>diffput<CR>")
+nnoremap("<leader>gk","<cmd>diffput<CR>")
+nnoremap("<leader>gds","<cmd>Gdiffsplit<CR>")
+
 --LSP
 nnoremap("gd","<cmd>LspDefinition<CR>")
 nnoremap("gs","<cmd>LspDocumentSymbolSearch<CR>")

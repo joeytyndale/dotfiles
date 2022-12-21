@@ -17,6 +17,9 @@ return require('packer').startup(function(use)
     use 'junegunn/fzf.vim'
     use 'mileszs/ack.vim'
     use 'BurntSushi/ripgrep'
+
+    --General Utils
+    use 'preservim/tagbar'
   
     --Git
     use 'tpope/vim-fugitive'
