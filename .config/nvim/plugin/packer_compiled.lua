@@ -79,30 +79,20 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/ack.vim",
     url = "https://github.com/mileszs/ack.vim"
   },
-  ["asyncomplete-lsp.vim"] = {
+  dracula = {
     loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/asyncomplete-lsp.vim",
-    url = "https://github.com/prabirshrestha/asyncomplete-lsp.vim"
-  },
-  ["asyncomplete.vim"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/asyncomplete.vim",
-    url = "https://github.com/prabirshrestha/asyncomplete.vim"
+    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/dracula",
+    url = "https://github.com/dracula/vim"
   },
   fzf = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/fzf",
-    url = "/usr/local/opt/fzf"
+    url = "https://github.com/junegunn/fzf"
   },
   ["fzf.vim"] = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
-  },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   neotest = {
     config = { "\27LJ\2\ns\0\0\a\0\6\1\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0004\3\3\0006\4\0\0'\6\3\0B\4\2\0?\4\0\0=\3\5\2B\0\2\1K\0\1\0\radapters\1\0\0\20neotest-phpunit\nsetup\fneotest\frequire\3€€À™\4\0" },
@@ -115,17 +105,6 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/neotest-phpunit",
     url = "https://github.com/olimorris/neotest-phpunit"
   },
-  ["nvim-blame-line"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/nvim-blame-line",
-    url = "https://github.com/tveskag/nvim-blame-line"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -136,20 +115,10 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  tagbar = {
+  ripgrep = {
     loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/tagbar",
-    url = "https://github.com/preservim/tagbar"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["vim-ale"] = {
-    loaded = true,
-    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-ale",
-    url = "https://github.com/dmerejkowsky/vim-ale"
+    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
   },
   ["vim-fugitive"] = {
     loaded = true,
