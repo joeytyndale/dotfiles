@@ -9,6 +9,8 @@ return require('packer').startup(function(use)
     --LSP
     use 'prabirshrestha/vim-lsp'
     use 'mattn/vim-lsp-settings'
+    use 'prabirshrestha/asyncomplete.vim'
+    use 'prabirshrestha/asyncomplete-lsp.vim'
   
     --FUZZY FILES
     use 'junegunn/fzf'
@@ -20,6 +22,7 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
   
     --COLOR
+    use {'nyoom-engineering/oxocarbon.nvim'}
     use {'dracula/vim', as = 'dracula'}
   
     --PHPUNIT Tests baby!!!

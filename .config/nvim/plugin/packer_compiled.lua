@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/ack.vim",
     url = "https://github.com/mileszs/ack.vim"
   },
+  ["asyncomplete-lsp.vim"] = {
+    loaded = true,
+    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/asyncomplete-lsp.vim",
+    url = "https://github.com/prabirshrestha/asyncomplete-lsp.vim"
+  },
+  ["asyncomplete.vim"] = {
+    loaded = true,
+    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/asyncomplete.vim",
+    url = "https://github.com/prabirshrestha/asyncomplete.vim"
+  },
   dracula = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/dracula",
@@ -104,6 +114,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/neotest-phpunit",
     url = "https://github.com/olimorris/neotest-phpunit"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/Users/joeytyndale/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
