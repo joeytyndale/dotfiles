@@ -6,6 +6,12 @@ nnoremap("<leader>ff","<cmd>FZF<CR>")
 nnoremap("<C-p>","<cmd>FZF<CR>")
 nnoremap("<leader>fg","<cmd>Ag<CR>")
 
+--Movement
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
+nnoremap("n", "nzzzv")
+nnoremap("N", "Nzzzv")
+
 --LSP
 nnoremap("gd","<cmd>LspDefinition<CR>")
 nnoremap("gs","<cmd>LspDocumentSymbolSearch<CR>")
