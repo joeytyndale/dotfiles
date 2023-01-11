@@ -5,6 +5,8 @@ nnoremap("<leader>pv", "<cmd>Ex<CR>")
 nnoremap("<leader>ff","<cmd>FZF<CR>")
 nnoremap("<C-p>","<cmd>FZF<CR>")
 nnoremap("<leader>fg","<cmd>Ag<CR>")
+nnoremap("<leader>fb","<cmd>lua require('telescope.builtin').buffers()<cr>")
+nnoremap("<leader>fh","<cmd>lua require('telescope.builtin').help_tags()<cr>")
 
 --Movement
 nnoremap("<C-d>", "<C-d>zz")
@@ -17,16 +19,14 @@ nnoremap('<leader>c', '<cmd>TagbarToggle<CR>')
 
 --Git
 nnoremap("<leader>gdg","<cmd>diffget<CR>")
-nnoremap("<leader>gr","<cmd>diffget<CR>")
 nnoremap("<leader>gdp","<cmd>diffput<CR>")
-nnoremap("<leader>gk","<cmd>diffput<CR>")
 nnoremap("<leader>gds","<cmd>Gdiffsplit<CR>")
 
 --LSP
 nnoremap("gd","<cmd>LspDefinition<CR>")
 nnoremap("gs","<cmd>LspDocumentSymbolSearch<CR>")
 nnoremap("gS","<cmd>LspWorkspaceSymbolSearch<CR>")
-nnoremap("gr","<cmd>LspReferences<CR>")
+nnoremap("<leader>gr","<cmd>LspReferences<CR>")
 nnoremap("gi","<cmd>LspImplementation<CR>")
 nnoremap("gt","<cmd>LspTypeDefinition<CR>")
 nnoremap("<leader>rn","<cmd>LspRename<CR>")
