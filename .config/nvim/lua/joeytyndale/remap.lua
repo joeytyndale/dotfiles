@@ -1,6 +1,8 @@
 local nnoremap = require("joeytyndale.keymap").nnoremap
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
 
+vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
+
 --Fuzzy Files
 nnoremap("<leader>ff","<cmd>FZF<CR>")
 nnoremap("<C-p>","<cmd>FZF<CR>")
@@ -33,7 +35,7 @@ nnoremap("<leader>rn","<cmd>LspRename<CR>")
 nnoremap("K","<cmd>LspHover<CR>")
 
 --PhpUnit
---nnoremap("<leader>t","<cmd>TestNearest<CR>", {silent = true, buffer = false})
---nnoremap("<leader>T","<cmd>TestFile<CR>")
---nnoremap("<leader>l","<cmd>TestLast<CR>")
---nnoremap("<leader>a","<cmd>TestSuite<CR>")
+nnoremap("<leader>t","<cmd>TestNearest<CR>", {silent = true, buffer = false})
+nnoremap("<leader>T","<cmd>TestFile<CR>")
+nnoremap("<leader>l","<cmd>TestLast<CR>")
+nnoremap("<leader>a","<cmd>TestSuite<CR>")

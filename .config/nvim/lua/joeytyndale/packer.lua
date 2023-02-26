@@ -5,6 +5,7 @@ vim.cmd [[packadd packer.nvim]]
   
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
+    use 'eandrju/cellular-automaton.nvim'
   
     --LSP
     use 'prabirshrestha/vim-lsp'
@@ -25,6 +26,8 @@ return require('packer').startup(function(use)
 
     --General Utils
     use 'preservim/tagbar'
+    use 'vimwiki/vimwiki'
+    use 'nvim-treesitter/nvim-treesitter'
   
     --Git
     use 'tpope/vim-fugitive'
