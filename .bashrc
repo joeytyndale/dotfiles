@@ -1,6 +1,6 @@
 ## SHINEON STUFF ##
-alias shine-sd="cd /Users/joeytyndale/Projects/shinedock"
-alias shine-fd="cd /Users/joeytyndale/Projects/shopify-app"
+alias shine-sd="cd $HOME/projects/shinedock"
+alias shine-fd="cd $HOME/projects/shopify-app"
 alias shine-up="shine-sd && dc up -d caddy ngrok mysql mysql_client worker workspace"
 alias shine-up-full="shine-sd && dc up -d"
 alias shine-down="shine-sd && dc down"
@@ -13,8 +13,8 @@ alias aws-prod-helper="ssh -i ~/.ssh/id_rsa ubuntu@ec2-34-199-92-207.compute-1.a
 # Helpful function to print these aliases
 function shine-list {
 echo "# ShineOn Aliases"
-echo "shine-sd = 'cd /Users/joeytyndale/Projects/shinedock'"
-echo "shine-fd = 'cd /Users/joeytyndale/Projects/shopify-app"
+echo "shine-sd = 'cd $HOME/projects/shinedock'"
+echo "shine-fd = 'cd $HOME/projects/shopify-app"
 echo "shine-up = 'shine-sd && dc up -d caddy ngrok mysql mysql_client worker workspace'"
 echo "shine-up-full = 'shine-sd && dc up -d'"
 echo "shine-down = 'shine-sd && dc down'"
@@ -34,7 +34,7 @@ function find-string {
 }
 
 alias ls="ls -lah"
-alias logreset="rm /Users/joeytyndale/Projects/shopify-app/storage/logs/laravel.log; touch /Users/joeytyndale/Projects/shineOn/shopify-app/storage/logs/laravel.log"
+alias logreset="rm $HOME/projects/shopify-app/storage/logs/laravel.log; touch /Users/joeytyndale/Projects/shineOn/shopify-app/storage/logs/laravel.log"
 alias vopen="nvim -O \`fzf\`"
 alias vo="vopen"
 alias se="nvim -O \`git status | grep '^\s[a-z]:*\S*' | grep -oE '\S*$' | fzf \`"
@@ -48,7 +48,8 @@ alias gp="git pull"
 alias gc="git commit"
 alias gs="git status"
 alias :q="echo 'You are not in Vim dude'"
-alias config='/usr/bin/git --git-dir=/Users/joeytyndale/dotfiles --work-tree=/Users/joeytyndale'
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias x="/usr/share/sddm/scripts/Xsetup"
 #eval "$(thefuck --alias)"
 
 eval "$(starship init bash)"
@@ -56,3 +57,8 @@ eval "$(starship init bash)"
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
+source /usr/share/nvm/init-nvm.sh
+source /usr/share/nvm/init-nvm.sh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
