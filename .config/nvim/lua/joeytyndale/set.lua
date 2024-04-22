@@ -1,6 +1,11 @@
 --Leader!!
 vim.g.mapleader = " "
 
+-- Enable autoindent
+vim.cmd[[filetype plugin indent on]]
+vim.o.autoindent = true
+vim.o.smartindent = true
+
 --Your basic stuff
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -20,8 +25,11 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 --PHPUnit test stuff
-vim.g['test#strategy']="neovim"
-vim.g['test#php#phpunit#executable']="cd /Users/joeytyndale/Projects/shinedock && docker-compose exec workspace php artisan test"
+vim.g['test#strategy']="neovim_sticky"
+vim.g['test#php#phpunit#executable']="cd $HOME/projects/shinedock && docker-compose exec workspace ./vendor/bin/phpunit"
 vim.g['test#neovim#term_position']="vert botright"
+vim.g['test#preserve_screen'] = 0
+vim.g['test#neovim_sticky#reopen_window'] = 1
 vim.g['test#neovim#start_normal']=1
+vim.g['test#neovim_sticky#start_normal']=1
 vim.g['test#basic#start_normal']=1
