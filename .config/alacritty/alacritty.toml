@@ -1,4 +1,4 @@
-shell = "/usr/local/bin/fish"
+shell = "/usr/bin/zsh"
 
 import = [
   # uncomment the flavour you want below:
@@ -9,5 +9,5 @@ import = [
 ]
 
 [window]
-startup_mode = "Fullscreen"
+#startup_mode = "Fullscreen"
 opacity = 0.85

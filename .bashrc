@@ -1,6 +1,6 @@
 ## SHINEON STUFF ##
-alias shine-sd="cd $HOME/projects/shinedock"
-alias shine-fd="cd $HOME/projects/shopify-app"
+alias shine-sd="cd $HOME/Projects/shinedock"
+alias shine-fd="cd $HOME/Projects/shopify-app"
 alias shine-up="shine-sd && dc up -d caddy ngrok mysql mysql_client worker workspace"
 alias shine-up-full="shine-sd && dc up -d"
 alias shine-down="shine-sd && dc down"
@@ -13,8 +13,8 @@ alias aws-prod-helper="ssh -i ~/.ssh/id_rsa ubuntu@ec2-34-199-92-207.compute-1.a
 # Helpful function to print these aliases
 function shine-list {
 echo "# ShineOn Aliases"
-echo "shine-sd = 'cd $HOME/projects/shinedock'"
-echo "shine-fd = 'cd $HOME/projects/shopify-app"
+echo "shine-sd = 'cd $HOME/Projects/shinedock'"
+echo "shine-fd = 'cd $HOME/Projects/shopify-app"
 echo "shine-up = 'shine-sd && dc up -d caddy ngrok mysql mysql_client worker workspace'"
 echo "shine-up-full = 'shine-sd && dc up -d'"
 echo "shine-down = 'shine-sd && dc down'"
@@ -34,7 +34,7 @@ function find-string {
 }
 
 alias ls="ls -lah"
-alias logreset="rm $HOME/projects/shopify-app/storage/logs/laravel.log; touch /Users/joeytyndale/Projects/shineOn/shopify-app/storage/logs/laravel.log"
+alias logreset="rm $HOME/Projects/shopify-app/storage/logs/laravel.log; touch /Users/joeytyndale/Projects/shineOn/shopify-app/storage/logs/laravel.log"
 alias vopen="nvim -O \`fzf\`"
 alias vo="vopen"
 alias se="nvim -O \`git status | grep '^\s[a-z]:*\S*' | grep -oE '\S*$' | fzf \`"
