@@ -1,2 +1,13 @@
+# Setup the repo
 echo "alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git --work-tree=$HOME'" >> $HOME/.bashrc
 config config --local status.showUntrackedFiles no
+
+# Get our vim packages up
+git clone https://aur.archlinux.org/nvim-packer-git.git
+
+# TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Shell
+sudo pacman -S fish
+sudo pacman -S startship

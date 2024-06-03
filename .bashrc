@@ -48,7 +48,7 @@ alias gp="git pull"
 alias gc="git commit"
 alias gs="git status"
 alias :q="echo 'You are not in Vim dude'"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/Projects/dotfiles.git --work-tree=$HOME'
 alias x="/usr/share/sddm/scripts/Xsetup"
 #eval "$(thefuck --alias)"
 
