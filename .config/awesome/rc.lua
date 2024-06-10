@@ -938,8 +938,8 @@ awful.rules.rules = {
 
     -- Set applications to always map on the tag 1 on screen 1.
     -- find class or role via xprop command
-    --{ rule = { class = browser2 },
-      --properties = { screen = 1, tag = awful.util.tagnames[1], switchtotag = true  } },
+    { rule = { class = terminal },
+      properties = { screen = 1, tag = awful.util.tagnames[1], switchtotag = true  } },
 
     --{ rule = { class = browser1 },
       --properties = { screen = 1, tag = awful.util.tagnames[1], switchtotag = true  } },
@@ -954,8 +954,8 @@ awful.rules.rules = {
       --properties = { screen = 1, tag = awful.util.tagnames[1],switchtotag = true  } },
 
     -- Set applications to always map on the tag 2 on screen 1.
-    --{ rule = { class = "Subl" },
-        --properties = { screen = 1, tag = awful.util.tagnames[2],switchtotag = true  } },
+    { rule = { class = browser1},
+        properties = { screen = 1, tag = awful.util.tagnames[2],switchtotag = true  } },
 
     --{ rule = { class = editorgui },
         --properties = { screen = 1, tag = awful.util.tagnames[2], switchtotag = true  } },
@@ -971,8 +971,8 @@ awful.rules.rules = {
 
 
     -- Set applications to always map on the tag 3 on screen 1.
-    --{ rule = { class = "Inkscape" },
-        --properties = { screen = 1, tag = awful.util.tagnames[3], switchtotag = true  } },
+    { rule = { class = "slack"},
+        properties = { screen = 1, tag = awful.util.tagnames[3], switchtotag = true  } },
 
     -- Set applications to always map on the tag 4 on screen 1.
     --{ rule = { class = "Gimp" },
