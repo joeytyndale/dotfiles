@@ -594,3 +594,11 @@ nb() {
   git branch -M $1  # Create a new branch named by the argument (-M updates existing branch if it exists)
   git push -u origin $1  # Push the newly created branch to remote origin
 }
+
+# pnpm
+export PNPM_HOME="/home/joeytyndale/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

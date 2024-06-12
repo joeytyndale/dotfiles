@@ -26,7 +26,7 @@ vim.opt.undofile = true
 
 --PHPUnit test stuff
 vim.g['test#strategy']="neovim_sticky"
-vim.g['test#php#phpunit#executable']="cd $HOME/projects/shinedock && docker-compose exec workspace ./vendor/bin/phpunit"
+vim.g['test#php#phpunit#executable']="cd $HOME/Projects/shinedock && docker-compose exec workspace ./vendor/bin/phpunit"
 vim.g['test#neovim#term_position']="vert botright"
 vim.g['test#preserve_screen'] = 0
 vim.g['test#neovim_sticky#reopen_window'] = 1
