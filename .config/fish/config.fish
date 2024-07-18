@@ -35,7 +35,7 @@ alias gs="git status"
 alias :q="echo 'You are not in Vim dude'"
 alias x="/usr/share/sddm/scripts/Xsetup"
 
-alias config='/usr/bin/git --git-dir=~/Projects/dotfiles.git --work-tree=~'
+alias config='/usr/bin/git --git-dir=$HOME/Projects/dotfiles.git --work-tree=$HOME'
 alias hdmi='xrandr --output HDMI-1 --auto --primary --output eDP-1 --off'
 alias dp-1='xrandr --output DP-1 --auto --primary --output eDP-1 --off'
 alias dp-2='xrandr --output DP-2 --auto --primary --output eDP-1 --off'
