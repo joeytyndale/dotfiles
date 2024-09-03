@@ -4,6 +4,9 @@ end
 
 set fish_greeting
 
+
+alias npm='pnpm'
+
 ## SHINEON STUFF ##
 alias shine-sd="cd $HOME/Projects/shinedock"
 alias shine-fd="cd $HOME/Projects/shopify-app"
@@ -16,7 +19,8 @@ alias dc="docker-compose"
 alias aws-prod-http="ssh -i ~/.ssh/id_rsa ubuntu@ec2-52-87-0-100.compute-1.amazonaws.com"
 alias aws-prod-worker="ssh -i ~/.ssh/id_rsa ubuntu@ec2-44-205-185-98.compute-1.amazonaws.com"
 alias aws-prod-helper="ssh -i ~/.ssh/id_rsa ubuntu@ec2-34-199-92-207.compute-1.amazonaws.com"
-alias aws-stage="ssh -i ~/.ssh/id_rsa ubuntu@ec2-3-87-228-34.compute-1.amazonaws.com"
+alias aws-stage="ssh -i ~/.ssh/id_rsa ubuntu@ec2-44-209-160-80.compute-1.amazonaws.com"
+alias joey="ssh joeytyndale@stormtrooper"
 alias ls="ls -lah"
 alias logreset="rm $HOME/Projects/shopify-app/storage/logs/laravel.log; touch /Users/joeytyndale/Projects/shineOn/shopify-app/storage/logs/laravel.log"
 alias vopen="nvim -O (fzf)"
@@ -44,18 +48,10 @@ alias dp-4='xrandr --output DP-4 --auto --primary --output eDP-1 --off'
 alias laptop='xrandr --output eDP-1 --auto --primary --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output HDMI-1 --off'
 starship init fish | source
 
-thefuck --alias | source
-
 set -x LESS -SRXF
 
 set -Ua fish_user_paths ~/.config/composer/vendor/bin
 set --universal fish_user_paths $fish_user_paths /usr/local/bin
-
-# RUBY
-set -gx fish_user_paths $fish_user_paths ~/.rvm/bin
-
-# Load RVM into the shell
-rvm default
 
 function nvm
     bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv

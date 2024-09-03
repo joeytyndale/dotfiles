@@ -1,3 +1,4 @@
+alias npm='pnpm'
 ## SHINEON STUFF ##
 alias shine-sd="cd $HOME/Projects/shinedock"
 alias shine-fd="cd $HOME/Projects/shopify-app"
