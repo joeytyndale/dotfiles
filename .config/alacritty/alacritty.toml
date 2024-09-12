@@ -11,3 +11,7 @@ import = [
 [window]
 #startup_mode = "Fullscreen"
 opacity = 0.95
+
+[font]
+offset.y = 4
+offset.x = 1

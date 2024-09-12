@@ -53,6 +53,13 @@ set -x LESS -SRXF
 set -Ua fish_user_paths ~/.config/composer/vendor/bin
 set --universal fish_user_paths $fish_user_paths /usr/local/bin
 
+## Rails
+set -x PATH $HOME/.rvm/bin $PATH
+rvm use default
+
+set -x PATH $HOME/.local/share/gem/ruby/3.2.0/bin $HOME/.rvm/gems/default/bin $HOME/.rvm/gems/$rvm_ruby_version/bin $HOME/.rvm/rubies/$rvm_ruby_version/bin $PATH
+status --is-interactive; and source (rvm 3.2.0 do rvm env --path)  # Replace with your Ruby version
+
 function nvm
     bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
 end
