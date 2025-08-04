@@ -19,6 +19,7 @@ alias dc="docker-compose"
 alias aws-prod-http="ssh -i ~/.ssh/id_rsa ubuntu@ec2-52-87-0-100.compute-1.amazonaws.com"
 alias aws-prod-worker="ssh -i ~/.ssh/id_rsa ubuntu@ec2-44-205-185-98.compute-1.amazonaws.com"
 alias aws-prod-helper="ssh -i ~/.ssh/id_rsa ubuntu@ec2-34-199-92-207.compute-1.amazonaws.com"
+alias aws-grafan="ssh ubuntu@ec2-44-223-23-215.compute-1.amazonaws.com"
 alias aws-stage="ssh -i ~/.ssh/id_rsa ubuntu@ec2-44-209-160-80.compute-1.amazonaws.com"
 alias joey="ssh joeytyndale@stormtrooper"
 alias ls="ls -lah"
@@ -52,6 +53,13 @@ set -x LESS -SRXF
 
 set -Ua fish_user_paths ~/.config/composer/vendor/bin
 set --universal fish_user_paths $fish_user_paths /usr/local/bin
+
+## PNPM
+set -gx PNPM_HOME ~/.local/share/pnpm
+
+# Add PNPM_HOME to the PATH
+set -gx PATH $PNPM_HOME $PATH
+
 
 ## Rails
 set -x PATH $HOME/.rvm/bin $PATH

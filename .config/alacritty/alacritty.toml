@@ -1,6 +1,6 @@
-shell = "/usr/bin/fish"
+terminal.shell = "/usr/bin/fish"
 
-import = [
+general.import = [
   # uncomment the flavour you want below:
   #"~/.config/alacritty/catppuccin-latte.toml"
   # "~/.config/alacritty/catppuccin-frappe.toml"

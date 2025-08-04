@@ -78,6 +78,8 @@ local function run_once(cmd_arr)
     end
 end
 
+beautiful.useless_gap = 20
+
 run_once({ "unclutter -root" }) -- entries must be comma-separated
 -- }}}
 
