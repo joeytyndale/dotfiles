@@ -84,16 +84,6 @@ _G.packer_plugins = {
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/ack.vim",
     url = "https://github.com/mileszs/ack.vim"
   },
-  ["asyncomplete-lsp.vim"] = {
-    loaded = true,
-    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/asyncomplete-lsp.vim",
-    url = "https://github.com/prabirshrestha/asyncomplete-lsp.vim"
-  },
-  ["asyncomplete.vim"] = {
-    loaded = true,
-    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/asyncomplete.vim",
-    url = "https://github.com/prabirshrestha/asyncomplete.vim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -156,6 +146,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["laravel.nvim"] = {
     loaded = true,
@@ -305,16 +300,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-lsp"] = {
-    loaded = true,
-    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-lsp",
-    url = "https://github.com/prabirshrestha/vim-lsp"
-  },
-  ["vim-lsp-settings"] = {
-    loaded = true,
-    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/vim-lsp-settings",
-    url = "https://github.com/mattn/vim-lsp-settings"
   },
   ["vim-test"] = {
     loaded = true,

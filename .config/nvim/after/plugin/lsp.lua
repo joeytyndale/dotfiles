@@ -1,6 +1,25 @@
 require('mason').setup()
 require('mason-lspconfig').setup()
 
+-- Define on_attach function for LSP keybindings
+local on_attach = function(client, bufnr)
+  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  -- Only keep keybindings that don't conflict with remap.lua
+  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+  vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, bufopts)
+  vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
+  vim.keymap.set('n', '<leader>wl', function()
+    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+  end, bufopts)
+  vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, bufopts)
+  vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
+  vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format { async = true } end, bufopts)
+  
+  -- Removed conflicting keybindings that are now in remap.lua:
+  -- gd, K, gi, <leader>rn, gr
+end
+
 -- Enable the following language servers
 --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
 --
@@ -16,6 +35,17 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+
+  intelephense = {
+    filetypes = { 'php' },
+    settings = {
+      intelephense = {
+        files = {
+          maxSize = 1000000,
+        },
+      },
+    },
+  },
 
   lua_ls = {
     Lua = {
@@ -40,16 +70,34 @@ mason_lspconfig.setup {
   ensure_installed = vim.tbl_keys(servers),
 }
 
-mason_lspconfig.setup_handlers {
-  function(server_name)
-    require('lspconfig')[server_name].setup {
-      capabilities = capabilities,
-      on_attach = on_attach,
-      settings = servers[server_name],
-      filetypes = (servers[server_name] or {}).filetypes,
-    }
-  end,
-}
+-- Setup handlers for installed servers
+local function setup_server(server_name)
+  local server_config = {
+    capabilities = capabilities,
+    on_attach = on_attach,
+  }
+  
+  if servers[server_name] then
+    server_config.settings = servers[server_name].settings or servers[server_name]
+    server_config.filetypes = servers[server_name].filetypes
+  end
+  
+  require('lspconfig')[server_name].setup(server_config)
+end
+
+-- Check if setup_handlers exists (for newer versions)
+if mason_lspconfig.setup_handlers then
+  mason_lspconfig.setup_handlers {
+    function(server_name)
+      setup_server(server_name)
+    end,
+  }
+else
+  -- Fallback for older versions or manual setup
+  for server_name, _ in pairs(servers) do
+    setup_server(server_name)
+  end
+end
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
@@ -101,9 +149,4 @@ cmp.setup {
     { name = 'luasnip' },
     { name = 'path' },
   },
-}
-require("mason-lspconfig").setup_handlers {
-  function (server_name)
-    require("lspconfig")[server_name].setup{}
-  end,
 }

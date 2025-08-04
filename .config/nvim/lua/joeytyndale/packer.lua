@@ -26,8 +26,6 @@ return require('packer').startup(function(use)
     --}
 
     --LSP
-    use 'prabirshrestha/vim-lsp'
-    use 'mattn/vim-lsp-settings'
     use { 'neovim/nvim-lspconfig',
         requires = {
           -- Automatically install LSPs to stdpath for neovim
@@ -42,10 +40,7 @@ return require('packer').startup(function(use)
           'folke/neodev.nvim',
         },
     }
-    use 'prabirshrestha/asyncomplete.vim'
-    use 'prabirshrestha/asyncomplete-lsp.vim'
     use 'sbdchd/neoformat'
-    use 'williamboman/mason.nvim'
     use { 'hrsh7th/nvim-cmp',
         requires = {
           -- Snippet Engine & its associated nvim-cmp source
@@ -95,9 +90,16 @@ return require('packer').startup(function(use)
     use 'ryanoasis/vim-devicons'
     use 'PhilRunninger/nerdtree-buffer-ops'
     use 'PhilRunninger/nerdtree-visual-selection'
+    use {
+        'ThePrimeagen/harpoon',
+        branch = 'harpoon2',
+        requires = { 'nvim-lua/plenary.nvim' }
+    }
 
     use 'vimwiki/vimwiki'
-    use 'nvim-treesitter/nvim-treesitter'
+    use { 'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
     use 'nvim-treesitter/nvim-treesitter-context'
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
     use { 'nvim-lualine/lualine.nvim',
