@@ -3,8 +3,8 @@ nnoremap("<leader>pv", "<cmd>Ex<CR>")
 
 vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
 
---Fuzzy Files
-nnoremap("<leader>ff","<cmd>FZF<CR>")
+--Fuzzy Files (Telescope)
+nnoremap("<leader>ff","<cmd>Telescope find_files<CR>")
 nnoremap("<C-p>","<cmd>Telescope find_files<CR>")
 nnoremap("<leader>fg","<cmd>Telescope live_grep<CR>")
 nnoremap("<leader>fb","<cmd>Telescope buffers<cr>")
@@ -28,16 +28,10 @@ nnoremap("<leader>gdg","<cmd>diffget<CR>")
 nnoremap("<leader>gdp","<cmd>diffput<CR>")
 nnoremap("<leader>gds","<cmd>Gdiffsplit<CR>")
 
---LSP
-nnoremap("gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
-nnoremap("<leader>gd", "<cmd>Telescope lsp_definitions<CR>")
-nnoremap("<leader>gr","<cmd>Telescope lsp_references<CR>")
-nnoremap("gs","<cmd>LspDocumentSymbolSearch<CR>")
-nnoremap("gS","<cmd>LspWorkspaceSymbolSearch<CR>")
-nnoremap("gi","<cmd>lua vim.lsp.buf.implementation()<CR>")
-nnoremap("gt","<cmd>lua vim.lsp.buf.type_definition()<CR>")
-nnoremap("<leader>rn","<cmd>lua vim.lsp.buf.rename()<CR>")
-nnoremap("K","<cmd>lua vim.lsp.buf.hover()<CR>")
+--LSP (keybindings now handled in lsp.lua on_attach function)
+-- Enhanced LSP symbol search commands
+nnoremap("<leader>gs","<cmd>LspDocumentSymbolSearch<CR>")
+nnoremap("<leader>gS","<cmd>LspWorkspaceSymbolSearch<CR>")
 
 --PhpUnit
 nnoremap("<leader>t","<cmd>TestNearest<CR>", {silent = true, buffer = false})

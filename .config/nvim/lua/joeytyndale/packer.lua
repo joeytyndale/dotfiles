@@ -60,11 +60,8 @@ return require('packer').startup(function(use)
     --FORMATTER
     --use 'stephpy/vim-php-cs-fixer'
 
-    --FUZZY FILES
-    use 'junegunn/fzf'
-    use 'junegunn/fzf.vim'
-    use 'mileszs/ack.vim'
-    use 'BurntSushi/ripgrep'
+    --FUZZY FILES (Telescope - modern replacement for fzf)
+    use 'BurntSushi/ripgrep' -- Used by Telescope for live_grep
     use { 'nvim-telescope/telescope.nvim',
         requires = {
             'nvim-lua/plenary.nvim',
@@ -114,20 +111,23 @@ return require('packer').startup(function(use)
     use 'christoomey/vim-tmux-navigator'
     use 'karb94/neoscroll.nvim'
 
-    --COLOR
+    --COLOR SCHEMES (sick collection!)
     use {'nyoom-engineering/oxocarbon.nvim'}
     use {'dracula/vim', as = 'dracula'}
     use 'Mofiqul/vscode.nvim'
-
     use { "catppuccin/nvim", as = "catppuccin"}
-
-    --use {
-    --    'daltonmenezes/aura-theme',
-    --    rtp = 'packages/neovim',
-    --    config = function()
-    --        vim.cmd("colorscheme aura-soft-dark") -- Or any Aura theme available
-    --    end
-    --}
+    
+    -- Modern and beautiful colorschemes
+    use { 'folke/tokyonight.nvim' }
+    use { 'sainnhe/gruvbox-material' }
+    use { 'rebelot/kanagawa.nvim' }
+    use { 'rose-pine/neovim', as = 'rose-pine' }
+    use { 'shaunsingh/nord.nvim' }
+    use { 'navarasu/onedark.nvim' }
+    use { 'EdenEast/nightfox.nvim' }
+    use { 'marko-cerovac/material.nvim' }
+    use { 'projekt0n/github-nvim-theme' }
+    use { 'olivercederborg/poimandres.nvim' }
 
     --PHPUNIT Tests baby!!!
     use 'vim-test/vim-test'

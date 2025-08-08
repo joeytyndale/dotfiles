@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["ack.vim"] = {
-    loaded = true,
-    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/ack.vim",
-    url = "https://github.com/mileszs/ack.vim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -137,20 +132,25 @@ _G.packer_plugins = {
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  fzf = {
+  ["github-nvim-theme"] = {
     loaded = true,
-    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/fzf",
-    url = "https://github.com/junegunn/fzf"
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
   },
-  ["fzf.vim"] = {
+  ["gruvbox-material"] = {
     loaded = true,
-    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/fzf.vim",
-    url = "https://github.com/junegunn/fzf.vim"
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
   },
   harpoon = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["laravel.nvim"] = {
     loaded = true,
@@ -171,6 +171,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["neodev.nvim"] = {
     loaded = true,
@@ -218,6 +223,16 @@ _G.packer_plugins = {
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/nerdtree-visual-selection",
     url = "https://github.com/PhilRunninger/nerdtree-visual-selection"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
+  },
   ["nvim-blame-line"] = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/nvim-blame-line",
@@ -253,6 +268,11 @@ _G.packer_plugins = {
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["oxocarbon.nvim"] = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
@@ -268,10 +288,20 @@ _G.packer_plugins = {
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["poimandres.nvim"] = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/poimandres.nvim",
+    url = "https://github.com/olivercederborg/poimandres.nvim"
+  },
   ripgrep = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   tagbar = {
     loaded = true,
@@ -290,6 +320,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/joeytyndale/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-devicons"] = {
     loaded = true,
